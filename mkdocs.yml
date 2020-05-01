@@ -1,0 +1,18 @@
+site_name: RTD POC
+site_description: Project documentation with Markdown.
+site_author: kallenboone
+
+repo_url: https://github.com/kallenboone/readthedocstest
+edit_uri: ""
+
+theme:
+    name: mkdocs
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - django
+
+nav:
+    - Home: index.md
+    - Getting Started:
+        - Start Getting Started: gettingstarted.md

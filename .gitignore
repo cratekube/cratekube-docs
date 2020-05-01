@@ -1,0 +1,14 @@
+*
+
+!docs*
+
+!.readthedocs.yml
+!mkdocs.yml
+
+!.gitignore
+!.gitattributes
+
+!*.md
+!LICENSE
+
+.DS_Store

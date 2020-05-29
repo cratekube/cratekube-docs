@@ -29,6 +29,7 @@ By default, Read the Docs builds a latest version from the `master` branch in Gi
 
 ## Interactivity
 
+
 One of our major goals for documentation is that it provide an interactive learning experience. We have identified [Jupyter](https://jupyter.org/) as a possible tool for providing interactivity. Although Read the Docs does not provide Jupyter integration out of the box, there are other options for integration. A promising solution is to use [Jupyter Widgets](https://github.com/jupyter-widgets/ipywidgets), which are able to [embed in static web pages](https://ipywidgets.readthedocs.io/en/latest/embedding.html). However, while working with Read the Docs, we can't just embed widgets to a static html page, because Read the Docs uses [Sphinx](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html) and [MkDocs](https://docs.readthedocs.io/en/stable/intro/getting-started-with-mkdocs.html) for building the documentation. MkDocs works with the Markdown file format and Sphinx was designed to work with reStructuredText, but Markdown can be used as well by providing this [extension](https://recommonmark.readthedocs.io/en/latest). 
 
 There is no direct Jupyter integration for Sphinx or MkDocs, however, there are some plugins that could be used to get close to what we want. Our available options are:
@@ -38,6 +39,10 @@ There is no direct Jupyter integration for Sphinx or MkDocs, however, there are 
 
 
 				
+=======
+One of our major goals for documentation is that it provide an interactive learning experience. We have identified [Jupyter](https://jupyter.org/) as a possible tool for providing interactivity. Although Read the Docs does not provide Jupyter integration out of the box, there are other options for integration. A few promising solutions are [Jupyter Widgets](https://github.com/jupyter-widgets/ipywidgets), which are able to [embed in static web pages](https://ipywidgets.readthedocs.io/en/latest/embedding.html), and [a guide using multiple technologies](https://elc.github.io/posts/embed-interactive-notebooks/), which seems more complicated by may be more flexible. These approaches will need to be considered as part of the full interactive documentation architecture. 
+
+
 ## Future Work
 
 This proof of concept is just a start. It demonstrates a bare bones Read the Docs setup with basic configuration and versioning. The following additional work is necessary to get a fully featured user documentation site up and running:
